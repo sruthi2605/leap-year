@@ -14,4 +14,8 @@ describe('LeapYearFinder', () => {
     it('2017 is not a Leap Year', () => {
         expect(wrapper.instance().isLeapYear(2017)).toEqual(false);
     });
+
+    it('1900 is not a Leap Year', () => {
+        expect(wrapper.instance().isLeapYear(1900)).toEqual(false);
+    });
 });
